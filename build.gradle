@@ -10,12 +10,13 @@ repositories {
 }
 
 dependencies {
-    implementation("io.lettuce:lettuce-core:6.3.1.RELEASE")
+    implementation 'io.lettuce:lettuce-core:6.3.1.RELEASE'
+    implementation 'ch.qos.logback:logback-classic:1.4.14'
 
-    testImplementation platform('org.junit:junit-bom:5.10.0')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+//    testImplementation platform('org.junit:junit-bom:5.10.0')
+//    testImplementation 'org.junit.jupiter:junit-jupiter'
 }
 
 test {
-    useJUnitPlatform()
+//    useJUnitPlatform()
 }
